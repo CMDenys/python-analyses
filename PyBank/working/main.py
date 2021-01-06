@@ -55,6 +55,21 @@ print(f'Greatest Increase in Profits: {total_months[max_date]} (${greatest_profi
 print(f'Greatest Decrease in Profits: {total_months[min_date]} (${greatest_loss})')
 print('```')
 
+#specify file to write text to
+output_path = os.path.join('..', 'output', 'charliesPyPoll.csv')
+with open(output_path, 'w', newline='') as csvfile:
+    #initialize csv.writer
+    csvwriter = csv.writer(csvfile, delimiter=',')
+    csvwriter.writerow(['```'])
+    csvwriter.writerow([str('Financial Analysis')])
+    csvwriter.writerow([('-------------------------------')])
+    csvwriter.writerow([(f'Total Months: {len(total_months)}')])
+    csvwriter.writerow([(f'Total Profits: ${sum(profit_loss)}')])
+    csvwriter.writerow([(f'Average Change: ${round(avg_change, 2)}')])
+    csvwriter.writerow([(f'Greatest Increase in Profits: {total_months[max_date]} (${greatest_profit})')])
+    csvwriter.writerow([(f'Greatest Decrease in Profits: {total_months[min_date]} (${greatest_loss})')])
+    csvwriter.writerow([('```')])
+
 
 
     
