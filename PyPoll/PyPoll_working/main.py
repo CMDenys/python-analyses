@@ -13,10 +13,11 @@ correy_votes = []
 li_votes = []
 otooley_votes = []
 
+
 #define variables
 khan = 'Khan'
 correy = 'Correy'
-li = 'li'
+li = 'Li'
 otooley = "O'Tooley"
 
 
@@ -39,19 +40,40 @@ with open(csvpath) as csvfile:
         if candidates == otooley:
             otooley_votes.append(candidates)
 
-#find percent vote for each candidate
-khan_per_votes = float(len(khan_votes) / len(total_votes_cast) * 100)
-khan_pv_round = round(khan_per_votes, 3)
 
-correy_per_votes = float(len(correy_votes) / len(total_votes_cast) * 100)
-correy_pv_round = round(correy_per_votes, 3)
+#find percent vote for each candidate.  Found answer for formatting % here: https://www.kite.com/python/answers/how-to-format-a-number-as-a-percentage-in-python
+khan_per_votes = float(len(khan_votes) / len(total_votes_cast))
+khan_pv_rounded3 = "{:.3%}".format(khan_per_votes)
 
-li_per_votes = float(len(li_votes) / len(total_votes_cast) * 100)
-li_pv_round = round(li_per_votes, 3)
+correy_per_votes = float(len(correy_votes) / len(total_votes_cast))
+correy_pv_rounded3 = "{:.3%}".format(correy_per_votes)
 
-otooley_per_votes = float(len(otooley_votes) / len(total_votes_cast) * 100)
-otooley_pv_round = round(otooley_per_votes, 3)
+li_per_votes = float(len(li_votes) / len(total_votes_cast))
+li_pv_rounded3 = "{:.3%}".format(li_per_votes)
+
+otooley_per_votes = float(len(otooley_votes) / len(total_votes_cast))
+otooley_pv_rounded3 = "{:.3%}".format(otooley_per_votes)
 
 
+print('Election Results')
+print('-----------------------------------')
 print(f'Total Votes: {len(total_votes_cast)}')
-print(f'Khan: {len(khan_votes)}  {(khan_pv_round)}%')
+print('-----------------------------------')
+print(f'Khan: {khan_pv_rounded3} ({len(khan_votes)})')
+print(f'Correy: {correy_pv_rounded3} ({len(correy_votes)})')
+print(f'Li: {li_pv_rounded3} ({len(li_votes)})')
+print(f"O'Tooley: {otooley_pv_rounded3} ({len(otooley_votes)})")
+
+#specify file to write text to
+output_path = os.path.join('..', 'output', 'charliesPyPoll.csv')
+with open(output_path, 'w', newline='') as csvfile:
+    csvwriter = csv.writer(csvfile, delimiter=',')
+
+    csvwriter.writerow(['Election Results'])
+    csvwriter.writerow(['-------------------------------------'])
+    csvwriter.writerow([(f'Total Votes: {len(total_votes_cast)}')])
+    csvwriter.writerow(['-------------------------------------'])
+    csvwriter.writerow([(f'Khan: {khan_pv_rounded3} ({len(khan_votes)})')])
+    csvwriter.writerow([(f'Correy: {correy_pv_rounded3} ({len(correy_votes)})')])
+    csvwriter.writerow([(f'Li: {li_pv_rounded3} ({len(li_votes)})')])
+    csvwriter.writerow([(f"O'Tooley: {otooley_pv_rounded3} ({len(otooley_votes)})")])
