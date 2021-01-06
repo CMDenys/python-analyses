@@ -41,22 +41,22 @@ with open(csvpath) as csvfile:
         greatest_profit = max(change_pl)
         greatest_loss = min(change_pl)
 
-        #need to index into where the greatest profit happened in total months
+        #need to index into where the greatest profit and loss happened in total months
         max_date = change_pl.index(greatest_profit) + 1
-
-
-
+        min_date = change_pl.index(greatest_loss) + 1
         
-
-
+print('```')
+print('Financial Analysis')
+print('-------------------------------')
 print(f'Total Months: {len(total_months)}')    
+print(f'Total Profits: ${sum(profit_loss)}')
+print(f'Average Change: ${round(avg_change, 2)}')
+print(f'Greatest Increase in Profits: {total_months[max_date]} (${greatest_profit})')
+print(f'Greatest Decrease in Profits: {total_months[min_date]} (${greatest_loss})')
+print('```')
 
-print(f'Total Profits: {sum(profit_loss)}')
-print(f'Average Change: {round(avg_change, 2)}')
-print(f'{total_months[max_date]} {greatest_profit}')
-print(f'{greatest_loss}')
 
-# print(f'{avg_net_change}')
+
     
    
     
