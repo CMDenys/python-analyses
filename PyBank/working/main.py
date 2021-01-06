@@ -56,7 +56,7 @@ print(f'Greatest Decrease in Profits: {total_months[min_date]} (${greatest_loss}
 print('```')
 
 #specify file to write text to
-output_path = os.path.join('..', 'output', 'charliesPyPoll.csv')
+output_path = os.path.join('..', 'output', 'charliesPyBank.csv')
 with open(output_path, 'w', newline='') as csvfile:
     #initialize csv.writer
     csvwriter = csv.writer(csvfile, delimiter=',')
