@@ -27,7 +27,7 @@ with open(csvpath) as csvfile:
     csvheader = next(csvreader)
     #add all the rows in the data sheet to get the total vote count
     for row in csvreader:
-        total_votes_cast.append(row[0])
+        total_votes_cast.append(row[2])
         
         #define variable for candidate count and add each name to it's own list
         candidates = row[2]
@@ -40,6 +40,7 @@ with open(csvpath) as csvfile:
         if candidates == otooley:
             otooley_votes.append(candidates)
 
+    
 
 #find percent vote for each candidate.  Found answer for formatting % here: https://www.kite.com/python/answers/how-to-format-a-number-as-a-percentage-in-python
 khan_per_votes = float(len(khan_votes) / len(total_votes_cast))
@@ -63,6 +64,8 @@ print(f'Khan: {khan_pv_rounded3} ({len(khan_votes)})')
 print(f'Correy: {correy_pv_rounded3} ({len(correy_votes)})')
 print(f'Li: {li_pv_rounded3} ({len(li_votes)})')
 print(f"O'Tooley: {otooley_pv_rounded3} ({len(otooley_votes)})")
+print(f'Winner: Khan')
+
 
 #specify file to write text to
 output_path = os.path.join('..', 'output', 'charliesPyPoll.csv')
@@ -77,3 +80,4 @@ with open(output_path, 'w', newline='') as csvfile:
     csvwriter.writerow([(f'Correy: {correy_pv_rounded3} ({len(correy_votes)})')])
     csvwriter.writerow([(f'Li: {li_pv_rounded3} ({len(li_votes)})')])
     csvwriter.writerow([(f"O'Tooley: {otooley_pv_rounded3} ({len(otooley_votes)})")])
+    csvwriter.writerow([(f'Winner: Khan')])
