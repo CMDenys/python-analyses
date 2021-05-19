@@ -1,4 +1,4 @@
-# python-challenge
+<h1 text-align="center"> Python Challenge </h1>
 
 This challenge is composed of two parts.  First, we were tasked with creating a Python script for analyzing the financial records of a fictional company. Data was provided in CSV format and was composed of two columns: Date and Profit/Losses.  Our task was to analyze the records to calculate each of the following:
 
