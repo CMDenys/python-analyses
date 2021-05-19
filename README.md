@@ -15,6 +15,6 @@ To calculate each of these, two for loops were used and respective outputs were 
 
 Onced the data was collected, print statements were collected to create a summary analysis.
 <hr>
-<a><img src="images/fin_analysis.png" width="700">
+<a><img src="images/fin_analysis.png" width="500">
 <hr>
 
