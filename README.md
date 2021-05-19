@@ -12,6 +12,9 @@ To calculate each of these, two for loops were used and respective outputs were 
 
 ![](images/forloop_finance.png)
 
+
+<img src="images/forloop_finance.png">
+
 Onced the data was collected, print statements were collected to create a summary analysis.
 
 ![](images/fin_analysis.png)
