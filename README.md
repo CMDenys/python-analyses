@@ -10,7 +10,7 @@ The greatest decrease in losses (date and amount) over the entire period
 
 To calculate each of these, two for loops were used and respective outputs were placed into empty lists.
 
-<p align="center">
+<p align="right">
 <img src="images/forloop_finance.png" width="700" content-align="center">
 </p>
 <hr>
