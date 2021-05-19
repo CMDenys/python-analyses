@@ -14,7 +14,7 @@ To calculate each of these, two for loops were used and respective outputs were 
 <hr>
 
 Onced the data was collected, print statements were collected to create a summary analysis.
-
-![](images/fin_analysis.png)
-
+<hr>
+<a><img src="images/fin_analysis.png" width="700">
+<hr>
 
