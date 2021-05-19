@@ -13,7 +13,7 @@ To calculate each of these, two for loops were used and respective outputs were 
 ![](images/forloop_finance.png)
 
 
-<img src="images/forloop_finance.png" width="200" text-align="center">
+<p><img src="images/forloop_finance.png" width="600" text-align="center"></p>
 
 Onced the data was collected, print statements were collected to create a summary analysis.
 
