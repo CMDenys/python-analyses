@@ -1,5 +1,7 @@
 <h1> Python Challenge </h1>
 
+<div>
+<p>
 This challenge is composed of two parts.  First, we were tasked with creating a Python script for analyzing the financial records of a fictional company. Data was provided in CSV format and was composed of two columns: Date and Profit/Losses.  Our task was to analyze the records to calculate each of the following:
 
 The total number of months included in the dataset.
@@ -9,10 +11,11 @@ The greatest increase in profits (date and amount) over the entire period
 The greatest decrease in losses (date and amount) over the entire period
 
 To calculate each of these, two for loops were used and respective outputs were placed into empty lists.
-
+  </p>
 <p align="right">
 <img src="images/forloop_finance.png" width="700" content-align="center">
 </p>
+  </div>
 <hr>
 
 Onced the data was collected, print statements were created to produce a summary analysis.
