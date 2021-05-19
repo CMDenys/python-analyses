@@ -17,9 +17,7 @@ To calculate each of these, two for loops were used and respective outputs were 
 
 Onced the data was collected, print statements were created to produce a summary analysis.
 
-<p align="center">
 <img src="images/fin_analysis.png" width="400">
-</p>
 <hr>
 
 For the next part of the challenge, our task was to assist with helping a small, rural town modernize its vote counting process.
@@ -33,15 +31,16 @@ The winner of the election based on popular vote.
 
 Similar to the first part of the assignment, empty lists were created, which would store each candidates vote count.  
 
-<p align="center">
+
 <img src="images/cand_lists.png" width="300">
-</p>
 <hr>
 
 To get the vote count for each candidate, nested if statements were used inside of a for loop and each reference to a candidates name was appended to the appropriate list.
 
+<p align="center">
 <img src="images/forloop_vote.png" width="700">
 <hr>
+</p>
 
 Finally, print statments were created to produce a summary of the vote count and declare a winner of the election.
 
