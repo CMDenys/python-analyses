@@ -26,11 +26,11 @@ The total number of votes each candidate won
 The winner of the election based on popular vote.
 
 Similar to the first part of the assignment, empty lists were created, which would store each candidates vote count.  
-<img src="images/cand_lists.png" width="700">
+<img src="images/cand_lists.png" width="300">
 <hr>
 
 To get the vote count for each candidate, nested if statements were used inside of a for loop and each reference to a candidates name was appended to the appropriate list.
-<img src="images/forloop_vote.png" width="300">
+<img src="images/forloop_vote.png" width="700">
 <hr>
 
 Finally, print statments were created to produce a summary of the vote count and declare a winner of the election.
