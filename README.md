@@ -1,7 +1,5 @@
 <h1> Python Challenge </h1>
 
-<div>
-<p>
 This challenge is composed of two parts.  First, we were tasked with creating a Python script for analyzing the financial records of a fictional company. Data was provided in CSV format and was composed of two columns: Date and Profit/Losses.  Our task was to analyze the records to calculate each of the following:
 
 The total number of months included in the dataset.
@@ -11,16 +9,17 @@ The greatest increase in profits (date and amount) over the entire period
 The greatest decrease in losses (date and amount) over the entire period
 
 To calculate each of these, two for loops were used and respective outputs were placed into empty lists.
-  </p>
-<p align="right">
+
+<p align="center">
 <img src="images/forloop_finance.png" width="700" content-align="center">
 </p>
-  </div>
 <hr>
 
 Onced the data was collected, print statements were created to produce a summary analysis.
 
+<p align="center">
 <img src="images/fin_analysis.png" width="400">
+</p>
 <hr>
 
 For the next part of the challenge, our task was to assist with helping a small, rural town modernize its vote counting process.
@@ -34,7 +33,9 @@ The winner of the election based on popular vote.
 
 Similar to the first part of the assignment, empty lists were created, which would store each candidates vote count.  
 
+<p align="center">
 <img src="images/cand_lists.png" width="300">
+</p>
 <hr>
 
 To get the vote count for each candidate, nested if statements were used inside of a for loop and each reference to a candidates name was appended to the appropriate list.
